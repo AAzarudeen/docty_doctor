@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointment_graph"
+    app:startDestination="@id/appointmentFragment">
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.example.doctydoctor.fragments.AppointmentFragment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_viewAppointmentFragment"
+            app:destination="@id/viewAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAppointmentFragment"
+        android:name="com.example.doctydoctor.fragments.ViewAppointmentFragment"
+        android:label="fragment_view_appointment"
+        tools:layout="@layout/fragment_view_appointment" />
+</navigation>

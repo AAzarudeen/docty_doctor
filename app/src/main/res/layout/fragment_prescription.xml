@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PrescriptionFragment"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prescription"
+        style="@style/page_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prescription_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"/>
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/add_prescription"
+    android:text="add prescription"
+    android:layout_gravity="center"
+    style="@style/btn_style"
+    android:layout_marginBottom="30dp"/>
+</LinearLayout>
